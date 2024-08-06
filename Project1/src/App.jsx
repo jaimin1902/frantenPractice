@@ -8,6 +8,7 @@ import Password from './component/Password'
 import Form from './component/Form'
 import Useeffect1 from './component/Useeffect1'
 import Navbar from './component2/Navbar'
+import Unjha from './component/Unjha';
 
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
     <Route path='/' element={<Password/>}/>
       <Route path='/form' element={<Form/>}/>
       <Route path='/useeffect1' element={<Useeffect1/>}/>
+      <Route path='/unjha' element={<Unjha/>}/>
     </Routes>
     
     </BrowserRouter>

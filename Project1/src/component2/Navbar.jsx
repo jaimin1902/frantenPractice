@@ -18,6 +18,7 @@ const Navbar = () => {
             <li><NavLink to="/">password</NavLink></li>
                 <li><NavLink to="/form">form</NavLink></li>
                 <li><NavLink to="/useeffect1">higt-width</NavLink></li>
+                <li><NavLink to="/unjha">unjha</NavLink></li>
                
             </ul>
         </nav>
