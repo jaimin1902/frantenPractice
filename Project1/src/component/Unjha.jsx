@@ -3,7 +3,7 @@ import axios from 'axios'
 
 const Unjha = () => {
   const [data, setData] = useState([])
-  const [url, seturl] = useState('')
+  // const [url, seturl] = useState('')
   // const[xyz]=data||[]
   // const{}=xyz||{}
   // console.log(xyz);
@@ -11,23 +11,27 @@ const Unjha = () => {
   
   useEffect(() => {
     const dataget = async () => {
+       
+        
       try {
-        const response = await axios.get(`https://backend-gram.onrender.com/form/`);
-        console.log(response.data);
+        const response = await axios.get(`http://localhost:5555/form/`);
         setData(response.data)
+        console.log(response.data);
       } catch (error) {
         console.log(error);
       }
     }
     dataget();
 
-  }, [])
+  }, []);
+
+
   return (
     <div>
       <h1 className='unjha'>unjha</h1>
       <div>
         {data.map((item) => {
-            return <div key={item.id}>
+            return <div className='text-white' key={item.id}>
               <div>
                 <h2>{item.gam}</h2>
                 <p>{item.taluko}</p>
